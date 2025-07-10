@@ -1,7 +1,7 @@
 # 조건문 
 
 # 횟수 제어 반복, 조건 제어 반복
-
+# 이거 추가
 # 연산자, 약속된 기호, 산술 연산자, + - * / // %
 # 대입 연산자, a = 100
 
@@ -40,6 +40,11 @@ else :
 # 가입 조건에 만족하지 않습니다.
 name = input("이름 : ")
 age = int(input("나이 : "))
+if len(name) == 3 and (name[0] == "김" or name[0] == "이" or name[0] =="박") and age >= 10 :
+    print("가입 완료")
+else :
+    print("가입 x")
+
 if len(name) == 3 :
     if name[0] == "김" :
         if age >= 10 :
@@ -60,4 +65,3 @@ else :
 
 # 논리 연산자 , and or
 
-print(True and False and True and True)
